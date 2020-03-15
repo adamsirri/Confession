@@ -4,6 +4,7 @@ client = commands.Bot(command_prefix ="/")
 
 @client.event
 async def on_ready():
+	await client.change_presence(status=discord.Status.idle , activity=discord.Game("helping people . "))
 	print("ok")
 @client.event
 async def on_message(message):
@@ -14,4 +15,4 @@ async def on_message(message):
 		embed=discord.Embed(title="Confession .",color=0x00ff00, description="A new confession  .")
 		embed.add_field(name="Confession :", value=Nmessage, inline=False)
 		await channel.send(embed=embed)
-client.run("Njg3Mzk1NTU4NDc3NzkxMjQ1.Xm41xA.HG3Wv6GWEDybXZYaEKQYzI98hsw",bot=True)
+client.run("Njg3Mzk1NTU4NDc3NzkxMjQ1.Xm6ArA.5VR8WiEJmqTy6jndejsjE1jxmwQ",bot=True)
